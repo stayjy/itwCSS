@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text</title>
+<link href="style.css" rel="stylesheet">
+<link href="text.css" rel="stylesheet">
+</head>
+<body>
+<h1>text- 로 시작하는 글자 속성들</h1>
+<ul>
+ <li>text-align: ; (영역내의)글자 수평정렬</li>
+ <li>text-decoration: ; 글자의 여러줄들</li>
+ <li>text-indent: ; 글자 들여쓰기</li>
+ <li>text-transform: ; 영문글자 대소문자 변경</li>
+ <li>text-shadow: ; 글자의 그림자 효과</li>
+ <li>text-overflow: ; 영역밖의 글자 지정</li>
+</ul>
+
+<section id="sec01">
+ <h2>text-align: ; (영역내의)글자 수평정렬</h2>
+ 
+ <p class="ta01">text-align:left; (영역내의)글자 수평정렬</p>
+ <p class="ta02">text-align:center; (영역내의)글자 수평정렬</p>
+ <p class="ta03">text-align:right; (영역내의)글자 수평정렬</p>
+ <p class="ta04">text-align:justify; (영역내의)글자 수평정렬 불러 찾아 이상을 보는 하여도 힘차게
+			청춘을 구할 가장 칼이다. 피고 인생에 것이다.보라, 봄바람이다. 사는가 어디 위하여서, 있으랴? 과실이 용감하고 우리의
+			일월과 꽃 원대하고, 철환하였는가? 눈이 이상은 천하를 그들을 밥을 아름다우냐? 구하지 않는 같으며, 따뜻한 쓸쓸하랴?
+			듣기만 사는가 몸이 보라. 피가 우리의 천고에 방황하였으며, 원대하고, 오아이스도 그들은 힘있다. 있음으로써 끓는 열매를
+			굳세게 새 전인 오아이스도 철환하였는가?Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Praesent sagittis nibh in arcu faucibus, non ornare
+			urna sollicitudin. Mauris euismod nec metus id ornare. Cras placerat
+			ante quis lacus aliquam elementum. Donec convallis lorem dolor, sed
+			tristique neque posuere ut. Morbi bibendum egestas facilisis. Proin
+			commodo urna et lorem cursus, quis molestie justo commodo. Integer
+			placerat ex ac velit luctus venenatis. Duis ultrices mauris ac erat
+			pulvinar aliquet. Praesent id elit est.
+</p>
+<input type="text" value="left" class="in-t ta01" >
+<input type="text" value="center" class="in-t ta02">
+<input type="text" value="right" class="in-t ta03">
+<!-- calss="A B C..."처럼 class는 조합하여 사용가능 -->
+
+</section>
+
+<section id="sec02">
+	<h2>text-decoration: ; 글자의 여러줄들</h2>
+	<p class="td01">text-decoration: overline; 글자 줄</p>
+	<p class="td02">text-decoration: line-through; 글자 줄</p>
+	<p class="td03">text-decoration: underline; 글자 줄</p>
+	<p >text-decoration: 
+	<a href="#" class="td04">none</a>; 글자 줄</p>
+	<!-- a 태그는 중요한 링크태그이기때문에 부모한테 걸린 class로는 자식태그에 적용이 되지 않음 -->
+</section>
+
+<section id="sec03">
+	<h2>text-indent: ; 글자 들여쓰기(첫줄에만 적용됨)</h2>
+	<p class="ti01">text-indent: ; 글자 들여쓰기</p>
+	<p class="ti02">text-indent: ; 글자 들여쓰기</p>
+	<p class="ti03">text-indent: ; 글자 들여쓰기</p>
+	<p class="ti04">text-indent: ; 글자 들여쓰기Lorem ipsum dolor sit amet, consectetur
+			adipiscing elit. Praesent sagittis nibh in arcu faucibus, non ornare
+			urna sollicitudin. Mauris euismod nec metus id ornare. Cras placerat
+			ante quis lacus aliquam elementum. Donec convallis lorem dolor, sed
+			tristique neque posuere ut. Morbi bibendum egestas facilisis. Proin
+			commodo urna et lorem cursus, quis molestie justo commodo. Integer
+			placerat ex ac velit luctus venenatis. Duis ultrices mauris ac erat
+			pulvinar aliquet. Praesent id elit est.</p>
+</section>
+
+<section id="sec04">
+	<h2>text-transform: ; 영문글자 대소문자 변경</h2>
+	<p class="tt01">tEXt-trANsfoRm: none;</p>
+	<p class="tt02">tEXt-trANsfoRm: lowercase;</p>
+	<p class="tt03">tEXt-trANsfoRm: uppercase;</p>
+	<p class="tt04">tEXt-trANsfoRm: capitalize;(단어) 첫글자만 대문자로 변경</p>
+</section>
+
+<section id="sec05">
+	<h2>text-shadow: n n n n; 글자의 그림자 효과</h2>
+	<pre>
+		<b>Xn			Yn			Blur  color</b>
+	<span class="Le">그림자의 수평방향 거리값   그림자의 수직방향 거리값</span>  	퍼짐값  색상
+	(음수가능)				(음수가능)
+	</pre>
+	<p class="ts01">text-shadow:2px 3px 6px #333; 글자의 그림자</p>
+	<p class="ts02">text-shadow:2px 3px 0 #333; 글자의 그림자</p>
+	<p class="ts03">text-shadow:-2px -3px 4px #333; 글자의 그림자</p>
+	<p class="ts04">text-shadow:2px 1px 4px #333; 글자의 그림자</p>
+	<p class="ts05">text-shadow:0 0 20px #aef; 글자의 그림자</p>
+	<p class="ts06">text-shadow:-2px -2px 4px #d70, 2px 2px 4px #70d; 글자의 그림자</p>
+	<p class="ts07">text-shadow:; 글자의 그림자</p>
+
+</section>
+
+
+
+
+</body>
+</html>

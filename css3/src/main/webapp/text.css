@@ -1,0 +1,107 @@
+@charset "UTF-8";
+section>pre {font-family: sans-serif;}
+.Le {letter-spacing: -0.2em;
+/* 자간 설정(문자 하나하나 사이 간격, 음수 가능) 
+word-spacing:n; 단어간(띄어쓰기) 간격
+*/
+	
+}
+
+/*1. text-align */
+.ta01, .ta02, .ta03, .ta04 {
+/* 그룹선택자 A, B, C... 는 여러요소를 동시에 불러와서 같은 스타일 적용.(선택자 종류는 서로 달라도 됨) */
+	border: 1px solid #f00;
+	width: 500px;
+} 
+
+.ta01 {text-align: left;}
+.ta02 {text-align: center;}
+.ta03 {text-align: right;}
+.ta04 {text-align: justify;}
+
+.in-t {border: none;
+background-color: #ccc;
+width: 200px;	
+}
+/* 코드가 밑에 있는것이 더 우선순위가 높음 */
+
+/*2.text-decoration  */
+.td01 {text-decoration: overline;}
+.td02 {text-decoration: line-through;}
+.td03 {text-decoration: underline;}
+.td04 {text-decoration: none;}
+.td04:hover {
+	text-decoration: underline;
+	background-color: #000;
+	color: #fff;	
+}
+/* A:hover는 마우스오버 상태일때 적용되는 상태선택자*/
+
+/*3. text-indent  */
+.ti01 {text-indent: 1em;}
+.ti02 {text-indent: 10px;}
+.ti03 {text-indent: 10%;}
+.ti04 {text-indent: -100px;}
+.ti04:hover {
+	text-indent: 0px;
+}
+
+/* 4.text-transform */
+.tt01 {text-transform: none; }
+.tt02 {text-transform: lowercase; }
+.tt03 {text-transform: uppercase;}
+.tt04 {text-transform: capitalize;}
+
+/* 5.text-shadow */
+
+#sec05>p /* sec05 p 두 요소 사이에 더 많은 관계가 있을 때 공백으로 나타냄(>보다 더 넓은 의미)*/ 
+/* A>B는 요소 A의 바로 한단계 아래에 있는 자식요소 B를 불러오는 부모자식 관계선택자 
+   A B는 요소 A의아래에 있는 모든 하위 요소 B를 불러오는 조상자손 관계선택자 */
+{font-size: 40px;
+ font-weight: bold;
+ text-align: center;
+ }
+
+.ts01 {text-shadow: 2px 3px 6px #333;}
+.ts02 {text-shadow: 2px 3px 0 #333;}
+.ts03 {text-shadow: -2px -3px 4px #333;}
+.ts04 {text-shadow: 2px 1px 4px #333;
+ color: #fff;}
+.ts04:hover {
+	text-shadow: 0 0 0 #fff;
+	transition:1.2s  /* 1.2s -> 시간 */
+}
+.ts05 {
+	background-color: #000;
+	padding:10px 0;
+	text-shadow: 0 0 20px #c1f549;
+}
+.ts05:hover {
+	text-shadow: 0 0 20px #13ea1e;
+	transition:0.85s;
+}
+
+.ts06 {
+	color: #fff;
+	text-shadow: -2px -2px 4px #d70, 2px 2px 4px #70d;
+}
+
+.ts07 {
+	color: #fff;
+	text-shadow: 2px 3px 6px #333, -2px -3px 4px #fff; 
+}
+
+.ts07:hover {
+	text-shadow: 2px 2px 4px #70d;
+	transition:2.2s;
+	
+}
+
+
+
+
+
+
+
+
+

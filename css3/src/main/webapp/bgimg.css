@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+body {
+	background-color: #29d;
+	color: #fff;
+	background-image: url("img/lnen.jpg");
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: 80% bottom;
+	background-attachment: fixed;
+	}

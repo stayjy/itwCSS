@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 맵</title>
+</head>
+<body>
+<hr>
+<h1>이미지 맵</h1>
+<pre>
+ img usemap="#abc"
+ map name="abc"
+</pre>
+ shape="rect/circle/poly"
+ rect은 좌측상단의 꼭지점과 우측하단의 꼭지점 좌표 (x1,y1,x2,y2)
+  circle은 중심점과 반지름 (x1,y1,r)
+ poly는 시작점에서 시계방향으로 돌아가면서 좌표지정.(x1,y1,x2,y2,x3,y3,x4,y4)....)
+
+<img src="img/coffee-1.jpg" usemap="#map01">
+<map name="map01">
+ <area shape="rect" coords="0,0,200,150" href="test02.html"
+ target="_blank">
+ <area shape="circle" coords="250,190,20" href="test03.html" 
+ target="_blank">  
+</map>
+
+<hr>
+<img alt="yellow" src="img/yellow-wall.jpg" usemap="#map-y">
+<map name="map-y">
+ <area alt="naver.com" shape="rect" title="naver.com으로 이동" 
+ coords="75,360,150,480" href="https://www.naver.com/" target="_blank">
+ 
+ <area alt="w3school.imagemap" shape="circle" coords="350,200,10" title="w3school.imagemap" 
+  href="https://www.w3schools.com/html/html_images.asp" target="_blank">
+
+ <area alt="sports.news.naver.com" shape="poly" title="sports.news.naver.com" coords="170,240,200,230,220,255,225,290,155,290,160,260" 
+  href="https://sports.news.naver.com/index" target="_blank">
+
+</map>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
