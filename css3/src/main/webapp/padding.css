@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+#p01 {border: 1px solid;
+padding: 1em;
+}
+
+#p01:hover {
+	border: none;
+	padding: 0;
+}
+
+/* 1. padding의 방향별 지정 속성 */
+
+#ul01>li {
+	border: 1px solid #090;	
+}
+
+#ul01>li:nth-of-type(1) {
+	/*A:ntn-of-type(n)는 A중에서 n번째인 요소를 불러오는 순서선택자.
+	n은 수식도 가능
+	  */
+	padding-top: 30px;
+}
+
+#ul01>li:nth-of-type(2) {
+	text-align: right;
+	padding-right: 30px
+}
+
+#ul01>li:nth-of-type(3) {
+	padding-bottom: 30px;
+}
+
+#ul01>li:nth-of-type(4) {
+	text-align: left;
+	padding-left: 30px
+}
+
+.p-l {
+	border: 3px solid;
+	padding-left: 0.5em;}
+	
+.p-t {
+	border-top: 4px double #ccc;
+	/* border-color: maroon; */
+	padding-top: 0.5em;
+}
+
+/*2. padding의 값 갯수별 적용법 */
+
+#ul02>li {border: 1px solid #009;}
+
+
+#ul02>li:nth-of-type(1) {
+padding: 2em;
+}
+
+#ul02>li:nth-of-type(2) {
+padding: 2em 0;
+}
+
+#ul02>li:nth-of-type(3) {
+padding: 2em 0 1em;
+}
+
+#ul02>li:nth-of-type(4) {
+padding: 2em 20% 50px 10%;
+}
+
+.p-n01, .p-n02 {
+border: none;
+border-bottom: 4px ridge #49d;
+	
+}
+
+/* 폼요소에 padding 적용시 */
+label {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-right: 14px;
+}
+
+.p-n01:focus, .p-n02:focus {
+	/* A;focus는 폼요소에서 커서가 들어왔을 때,
+	포커싱이 되었을 때를 지정하는 가상(선택)선택자 */
+background-color: #9cf;	
+}
+
+.p-n01 {padding: 0.7em;}
+
+.p-n02 {padding: 0.4em 0.7em;}
+
+/* 이미지에 padding 적용  */
+img {
+width: 400px;
+}
+
+.im01 {
+	border: 24px solid #a5d;
+	padding: 40px;
+}
+
+.im02 {border: 1px solid;
+padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
