@@ -91,8 +91,8 @@ background-color: #9cf;
 .p-n02 {padding: 0.4em 0.7em;}
 
 /* 이미지에 padding 적용  */
-img {
-width: 400px;
+img {width: 400px;
+margin-right: 20px;
 }
 
 .im01 {
@@ -101,10 +101,25 @@ width: 400px;
 }
 
 .im02 {border: 1px solid;
-padding-bottom: 60px;
+padding: 20px 20px 150px;
 }
 
+.im03 {border: 1px solid;
+padding: 22px 22px 160px;
+border-radius: 6px;
+box-shadow: 2px 3px 10px #333; }
 
+.im04 {background-color: #adf;
+border-radius: 50%;
+padding: 40px;
+opacity:0.6;
+}
+
+.im04:hover {
+border-radius: 0;
+opacity:1;
+transition:1s;
+}
 
 
 

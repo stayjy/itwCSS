@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+<h1>margin</h1>
+ <p id="p01">요소의 부(테두리 기준) 여백</p>
+<h2>margin의 방향별 지정 속성</h2>
+ <ul id="ul01">
+ 	<li>margin-top:n;</li>
+ 	<li>margin-right:n;</li>
+ 	<li>margin-bottom:n;</li>
+ 	<li>margin-left:n;</li>
+ </ul>
+ 
+<h2>margin값 갯수별 적용법</h2>
+ <ul id="ul02">
+ 	<li>margin:n ;</li>
+ 	<li>margin:n n ;</li>
+ 	<li>margin-n n n ;</li>
+ 	<li>margin-n n n n;</li>
+ </ul>
+
+<h3>항상 요소가 수평 중앙에 위치</h3>
+ <p class="pre">
+ = 좌우 margin을 항상 같게(auto) 함
+ 
+ margin-left: auto; margin-right: auto;
+ 	또는 
+ margin:n auto;
+ </p>
+ 
+ <h3>inline 요소 margin</h3>
+ <p class="pre">
+ inline(한줄에 나란히오는)요소는
+ 상하 margin은 적용 불가,
+ 좌우 margin은 인접요소마다 각각 적용
+ </p>
+ 
+<form action="log.jsp">
+<fieldset>
+	<legend class="cap">log-in</legend>
+
+	<label for="id" class="cap">id</label>
+	<input type="text" id="id">
+	<label for="pwd" class="cap">password</label>
+	<input type="password" id="pwd">
+	 <br>
+	<button class="up btn">log-in</button>
+</fieldset>
+</form>
+
+<nav id="pg-List">
+ <a href="#">◁</a>
+ <a href="#">1</a>
+ <a href="#">2</a>
+ <a href="#">3</a>
+ <a href="#">4</a>
+ <a href="#">5</a>
+ <a href="#">▷</a>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
